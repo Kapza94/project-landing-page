@@ -81,6 +81,8 @@ h2{
     justify-content: center;
 }
 
+
+
 .imgs{
     display: flex;
     justify-content: center;
@@ -90,46 +92,63 @@ h2{
 .img2 img{
     width: 200px;
     height: 200px;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 5px;
     border-radius: 10px;
 }
 
 .subtext1{
     color: gray;
+    text-align: center;
 }
 
 .img3 img{
     width: 200px;
     height: 200px;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 5px;
     border-radius: 10px;
 }
 
 .subtext2{
     color: gray;
+    text-align: center;
 }
 
 
 .img4 img{
     width: 200px;
     height: 200px;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 5px;
     border-radius: 10px;
 }
 
 .subtext3{
     color: gray;
+    text-align: center;
 }
 
 .img5 img{
     width: 200px;
     height: 200px;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 5px;
     border-radius: 10px;
 }
 
 .subtext4{
+    text-align: center;
     color: gray;
+    margin-bottom: 100px;
 }
 
 .quote{
@@ -141,8 +160,8 @@ h2{
 .quotetext{
     margin-top: 75px;
     margin-bottom: 75px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
