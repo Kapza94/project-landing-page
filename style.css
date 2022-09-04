@@ -139,8 +139,8 @@ h2{
 }
 
 .quotetext{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     margin-left: 400px;
     margin-right: 400px;
     font-size: 36px;
@@ -152,4 +152,40 @@ h2{
     display: flex;
     justify-content: end;
     font-weight: bolder;
+}
+
+.calltoaction {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.ctamainblock{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #3882f6;
+    margin: 75px;
+    border-radius: 10px;
+    color: white;
+}
+
+.maintextcta{
+    margin-top: 45px;
+    margin-left: 75px;
+}
+
+.textcta{
+    font-weight: bolder;
+}
+
+.smalltext-cta{
+    margin-bottom: 45px;
+    margin-right: 75px;
+}
+
+.button2{
+    border: 2px white;
+    outline: white;
+    margin-left: 80px;
 }
