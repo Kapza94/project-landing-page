@@ -4,7 +4,8 @@ body{
     background-color: #1f2937;
     width: 100%;
     height: 100%;
-
+    margin:0;
+    padding:0;
     /* margin-left: 350px;
     margin-right: 350px; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -227,4 +228,158 @@ h2{
     margin: 50px;
     background-color: #1f2937;
     color: white;
+}
+
+/* keep in mind da ti nisam menjala tvoj css */
+
+
+/* TEST PAGE STYLING */
+/* I added a single global container style to the whole page. The main breakpoint is usually around 1140px for regular screens.
+ As you can see from the jpeg your blue CTA container is fully aligned, on left and right side, with the navigation and hero container.
+
+ So by adding a universal padding class this allows all content to be more indented, yet still fully aligned.
+*/
+.container {
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+.pl-4 {
+    padding-left: 4rem; /*https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/ Look into different css*/
+}
+
+.pr-4 {
+    padding-right: 4rem;
+}
+
+/* navbar styling */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.navbar .navbar-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav.navbar .navbar-logo {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav.navbar .navbar-list .navbar-list-element {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+nav.navbar .navbar-list .navbar-list-element .navbar-list-element-link {
+    padding: 1.5rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/* about container style*/
+.about-container {
+    background: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.about-container h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-container-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*this allows the elements to fall one after the other when you make your screen smaller*/
+}
+.about-container-content-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-container-content-block-img {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 5px solid #3882f6;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+
+/* cta container style*/
+.cta-container {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cta-container-content {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 2rem 8rem;
+}
+.cta-container-content-text {
+    color: white;
+}
+
+.cta-container-content-text p:first-of-type { /*take a look at nth-child, first-of-type,nth-of-type https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type*/
+    font-weight:600;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.cta-container-content-text p:last-of-type {
+    font-weight:300;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.cta-container-content a {
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp Look into media queries. They allow you to make your layouts more mobile friendly. */
+
+@media screen and (max-width:768px)  /*when your screen hits this breakpoint of 768px the layout of an element will change*/{
+    .pl-4 {
+        padding-left: 2rem !important;
+    }
+    .pr-4 {
+        padding-right: 2rem !important;
+    }
+
+    .navbar-list-element-link {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .about-container-content {
+        justify-content: center !important;
+    }
+    .about-container-content-block{
+        margin: 0 0.5rem;
+    }
+
+    .cta-container-content {
+        flex-direction: column;
+        padding: 2rem;
+    }
 }

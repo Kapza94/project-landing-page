@@ -6,96 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
-
+    
 </head>
 <body>
     <header>
-                <div class="c1">
-                    <div class="left">
-                        <H3>Header Logo</H3>
-                    </div>
-                        <div class="right">
-                            <p>header link one</p>
-                            <p>header link two</p>
-                            <p>header link three</p>
-                        </div>
-                </div>
-
-                <div class="c2">
-                    <div class="herotext">
-                        <h1>This website is awesome</h1>
-                        <p>This website has some subtext that goes here under the<br> main title. Its's a smaller font and the color is lower<br> contrast</p>
-                        <button>Sign up</button>
-                    </div>    
-                    <divc class="img1">
-                        <img src="./Img/blue1.jpg" alt="blue image">
-                    </div>
-                </div>
+        <!-- this sections is a navigation bar, look at the nav html element https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -->
+        <div class="c1">
+            <div class="left">
+                <!-- it is usually common practice to put all logos into a a(href) tag, so that user can always click on one when they want to go to homepage -->
+                <!-- + its not common practice to capitalize html tags -->
+                <H3>Header Logo</H3>
+            </div>
+            <!-- this is a navigation list and you should treat it as such; look at ul, li and a tags-->
+            <div class="right">
+                <p>header link one</p>
+                <p>header link two</p>
+                <p>header link three</p>
+                <p><a style="color:white" href="./test.html">Example</a></p>
+            </div>
+        </div>
+        
+        <!-- this whole section structure is do jajaaaa -->
+        <div class="c2">
+            <div class="herotext">
+                <h1>This website is awesome</h1>
+                <p>This website has some subtext that goes here under the<br> main title. Its's a smaller font and the color is lower<br> contrast</p>
+                <!-- since this button is leading to somewhere, it is a better practice to put it in a a(href) tag-->
+                <button>Sign up</button>
+            </div>    
+            <div class="img1"> <!-- Look into background images. While this is a good solution, sometimes using backgroundimages are easier to position and manipulate.  https://www.w3schools.com/cssref/pr_background-image.asp -->
+                <img src="./Img/blue1.jpg" alt="blue image">
+            </div>
+        </div>
     </header>
-
-<div class="Middle">
-                <div class="Randominfo">
-                    <h2>
-                        Some random information
-                    </h2>
-                </div>
-                    <div class="imgs">
-                        <div class="img2">
-                            <img src="./Img/img2.jpg" alt="img2">
-                                <div class="subtext1">
-                                    This is some subtext<br> under an illustration<br> of an image.
-                                </div>
-                        </div>
-                        <div class="img3">
-                            <img src="./Img/img3.jpg" alt="img3">
-                                <div class="subtext2">
-                                    This is some subtext<br> under an illustration<br> of an image.
-                                </div>
-                        </div>
-                        <div class="img4">
-                            <img src="./Img/img4.jpg" alt="img4">
-                                <div class="subtext3">
-                                    This is some subtext<br> under an illustration<br> of an image.
-                                </div>
-                        </div>
-                        <div class="img5">
-                            <img src="./Img/img5.jpg" alt="img5">
-                                <div class="subtext4">
-                                    This is some subtext<br> under an illustration<br> of an image.
-                                </div>  
-                        </div>
-                    </div>
-</div>
-
-<div class="quote">
-                    <div class="quotetext">
-                        <em> This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</em>
-                        <div class="author">
-                            -Thor, God of Thunder
-                        </div>
-                    </div>
-</div>
-
-<div class="calltoaction">
-                    <div class="ctamainblock">
-                    <div class="maintextcta">
-                        <div class="textcta">
-                        Call to action! It's time!
-                        </div>
-                        <div class="smalltext-cta">
-                            Sign up for our product by clicking that button right over there!
-                            <button class="button2"> 
-                                Sign up
-                            </button>
-                        </div>
-                    
-                    </div>
-</div>
-</div>
-
-<div class="footer">
-    <footer>Copywright Ⓒ The Odin Project 2021</footer>
-</div>
     
-</body>
+    <div class="Middle">
+        <!-- Since you only have ONE heading, there is really no need to put it in a block by itself, it can stand alone. 
+            Not a bad solution, just no need to have a heading in a div in this case -->
+            <div class="Randominfo">
+                <h2>
+                    Some random information
+                </h2>
+            </div>
+            <div class="imgs"> <!-- when we were talking about naming conventions this block can be named "info-container"-->
+                <div class="img2"> <!--this one can be info-container-block-->
+                    <img src="./Img/img2.jpg" alt="img2"> 
+                    <div class="subtext1"> <!--this can be info-container-block-text-->
+                        This is some subtext<br> under an illustration<br> of an image.
+                    </div>
+                </div>
+                <div class="img3">
+                    <img src="./Img/img3.jpg" alt="img3"> <!-- alt tags of images should usually be descriptive. You write what is it  that is on the image.-->
+                    <div class="subtext2">
+                        This is some subtext<br> under an illustration<br> of an image.
+                    </div>
+                </div>
+                <div class="img4">
+                    <img src="./Img/img4.jpg" alt="img4">
+                    <div class="subtext3">
+                        This is some subtext<br> under an illustration<br> of an image.
+                    </div>
+                </div>
+                <div class="img5">
+                    <img src="./Img/img5.jpg" alt="img5">
+                    <div class="subtext4">
+                        This is some subtext<br> under an illustration<br> of an image.
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="quote">
+            <!-- zasto stavljas plain text u div kad postoji P element za to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p -->
+            <div class="quotetext">
+                <!--look at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q Not a bad solution, just another version of it.-->
+                <em> This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</em>
+                
+                <div class="author">  <!-- zasto stavljas plain text u div kad postoji P element za to https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p -->
+                    -Thor, God of Thunder
+                </div>
+            </div>
+        </div>
+        
+        <div class="container calltoaction">
+            <div class="ctamainblock"><!-- you dont really need this div-->
+                <div class="maintextcta"> <!-- you dont really need this div either-->
+                    <div class="textcta"> <!--please put text in p tags-->
+                        Call to action! It's time!
+                    </div>
+                    <div class="smalltext-cta">
+                        Sign up for our product by clicking that button right over there!
+                        <button class="button2"> 
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- You don't need a div class for footer in this case. Footer tag is good initself.
+             In case you want to add a div, you would add it
+            INSIDE the footer tag. The example for this is that you would have a copyright sentence and some links on the side. Otherwise I would just leave it 
+            just as
+            <footer>Copyright</footer> 
+        and position accordingly-->
+        <div class="footer">
+            <footer>Copywright Ⓒ The Odin Project 2021</footer>
+        </div>
+               <!--volim te <3-->
+    </body>
 </html>
